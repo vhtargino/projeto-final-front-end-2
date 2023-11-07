@@ -1,0 +1,35 @@
+body {
+    margin: 0px;
+    font-family: 'Sen', sans-serif;
+}
+
+#centralizer {
+    max-width: 1170px;
+    margin: auto;
+}
+
+#menu {
+    margin: 25px 0 25px 0;
+    font-size: 22px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+}
+
+.textbox {
+    max-width: 300px;
+    margin: 30px;
+}
+
+table {
+    border: 1px solid black;
+    width: 100%;
+}
+
+tr, th, td {
+    border: 1px solid black;
+}
