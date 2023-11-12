@@ -3,11 +3,9 @@ function fazerLogin() {
     let senhaUsuario = document.getElementById("password").value;
 
     let dadosLogin = {email: emailUsuario, senha: senhaUsuario};
-    
-    let retornoValidacao = validarUsuario(dadosLogin);
 
-    if (retornoValidacao) {
-        window.location.replace("../area_admin.html");
+    if (validarUsuario(dadosLogin)) {
+        window.location.href = "area_admin.html";
     } else {
         alert("Usuário ou senha inválidos");
     }
