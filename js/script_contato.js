@@ -6,4 +6,6 @@ function pegarDadosContato() {
     let dadosContato = {nome: nomeUsuario, email: emailUsuario, mensagem: mensagemUsuario};
 
     inserirMensagem(dadosContato);
+
+    document.getElementById('contato-form').reset();
 }
