@@ -6,9 +6,9 @@ function fazerLogin() {
 
     if (validarUsuario(dadosLogin)) {
         window.location.href = "area_admin.html";
-        document.getElementById('login-form').reset();
     } else {
         alert("Usuário ou senha inválidos");
-        document.getElementById('login-form').reset();
     }
+
+    document.getElementById('login-form').reset();
 }
