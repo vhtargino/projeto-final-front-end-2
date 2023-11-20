@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Área Admin</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -16,7 +16,23 @@
             <a href="contato.html">Contato</a> |
             <a href="login_admin.html">Área Admin</a>
         </div>
+        <div id="container" style="padding-bottom: 30px;">
+            <h1>Mensagens recebidas</h1>
+        </div>
+        <div id="container" style="padding-bottom: 100px;">
+            <table id="table-mensagens">
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Mensagem</th>
+                </tr>
+            </table>
+        </div>
     </div>
+
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/script_admin.js"></script>
 </body>
 
 </html>

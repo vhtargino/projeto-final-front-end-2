@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -16,11 +16,11 @@
             <a href="contato.html">Contato</a> |
             <a href="login_admin.html">Área Admin</a>
         </div>
-        <div id="container-3">
-            <form action="">
+        <div id="container">
+            <form id="login-form" action="">
                 <h1>Login</h1>
                 <div>
-                    <input type="text" placeholder="E-mail" required="" id="email-login" />
+                    <input type="email" placeholder="E-mail" required="" id="email-login" />
                 </div>
                 <br>
                 <div>
@@ -28,12 +28,15 @@
                 </div>
                 <br>
                 <div>
-                    <input type="submit" value="Login" />
+                    <button type="button" id="fazer-login" onclick="fazerLogin()">Login</button>
                 </div>
             </form>
         </div>
-
     </div>
+
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/script_login.js"></script>
 </body>
 
 </html>

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -16,15 +16,15 @@
             <a href="contato.html">Contato</a> |
             <a href="login_admin.html">Área Admin</a>
         </div>
-        <div id="container-2">
-            <form action="">
+        <div id="container">
+            <form id="contato-form" action="">
                 <h1>Contato</h1>
                 <div>
                     <input type="text" placeholder="Nome" required="" id="nome" />
                 </div>
                 <br>
                 <div>
-                    <input type="text" placeholder="E-mail" required="" id="e-mail" />
+                    <input type="email" placeholder="E-mail" required="" id="email-contato" />
                 </div>
                 <br>
                 <div>
@@ -32,13 +32,18 @@
                 </div>
                 <br>
                 <div>
-                    <input type="submit" value="Enviar" id="enviar-email"/>
+                    <button type="button" id="enviar-email" onclick="pegarDadosContato()">Enviar</button>
+                </div>
+                <div>
+                    <p id="paragrafo-teste"></p>
                 </div>
             </form>
         </div>
     </div>
 
-    <script src="script_contato.js"></script>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/script_contato.js"></script>
 </body>
 
 </html>
